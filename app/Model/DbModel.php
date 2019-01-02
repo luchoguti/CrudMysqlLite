@@ -13,8 +13,8 @@ class DbModel
 		$nombre_servidor = "localhost";
 		$puerto="3306";
 		$nombre_usuario = "root";
-		$contrasena = "";
-		$nombre_bd = "farmalatamPrueba";
+		$contrasena = "passWordDataBase";
+		$nombre_bd = "nameDataBase";
 
 		$conexion = new mysqli($nombre_servidor.':'.$puerto,$nombre_usuario,$contrasena,$nombre_bd);
         $conexion->query("SET NAME 'utf8'");
