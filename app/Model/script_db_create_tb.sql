@@ -1,0 +1,2 @@
+CREATE DATABASE farmalatamprueba;
+CREATE TABLE `farmalatamprueba`.`aspirante` ( `id` INT NOT NULL AUTO_INCREMENT , `nombres` VARCHAR(255) NOT NULL , `tipo_ident` ENUM('cedula','pasaporte','cedula extranjeria') NOT NULL , `num_ident` INT(12) NOT NULL , `num_telefono` VARCHAR(255) NOT NULL , `fecha_nacimiento` DATE NOT NULL , `fecha_creacion` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
